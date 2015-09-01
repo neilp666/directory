@@ -1,3 +1,37 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding-top: 70px;
+  
+}
+
+.jumbotron {
+
+  text-align: center;
+  background-color: white;
+  height: 350px;
+  }
+
+
+ .center {
+     text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+
+
+a:hover { color:black; }
+
+.nav a { color:black; }
+
+a:hover { color:none; }
+
+
+
+

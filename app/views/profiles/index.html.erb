@@ -1,0 +1,33 @@
+<h1>Listing profiles</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Company</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <td><%= profile.title %></td>
+        <td><%= profile.name %></td>
+        <td><%= profile.email %></td>
+        <td><%= profile.company %></td>
+        <td><%= profile.location %></td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if current_user %>
+<%= link_to 'New Profile', new_profile_path %>
+<% end %>
